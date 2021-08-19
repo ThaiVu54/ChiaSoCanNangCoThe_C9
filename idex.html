@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Body mass index</title>
+</head>
+<body>
+
+<script>
+    let weight = prompt('Import weight');
+    weight = parseFloat(weight);
+    let height = prompt('Import height')
+    height = parseFloat(height);
+    let bmt = weight/(height^2);
+    alert(bmt)
+    if(bmt < 18.5){
+        document.write('underweight')
+    }else if(bmt<25){
+        document.write('normal')
+    }else if (bmt < 30){
+        document.write('overweight')
+    }else document.write('obese')
+</script>
+</body>
+</html>
